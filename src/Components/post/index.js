@@ -36,6 +36,7 @@ const Post = ({
   parentHandleDelete = () => null
 }) => {
   let author;
+  console.log(data);
   author = allUsers[data.author.id] || author;
   const [publishingCommentary, setPublishingCommentary] = useState(false);
   const [textValue, setTextValue] = useState("");
